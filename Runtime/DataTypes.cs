@@ -110,7 +110,6 @@ namespace OpenAI
         public List<ChatChoice> Choices { get; set; }
         public Usage Usage { get; set; }
         public string SystemFingerprint { get; set; }
-        public bool logprobs { get; set; }
     }
     
     public struct ChatChoice
@@ -119,6 +118,7 @@ namespace OpenAI
         public ChatMessage Delta { get; set; }
         public int? Index { get; set; }
         public string FinishReason { get; set; }
+        public bool logprobs { get; set; }
     }
 
     public struct ChatMessage
